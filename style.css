@@ -366,3 +366,143 @@ body {
         padding: 22px;
     }
 }
+
+/* Education and Experience Section */
+
+.experience-section {
+    background-color: #f8f9fa;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+}
+
+.timeline-heading {
+    font-size: 1.5rem;
+    color: #212529;
+    margin-bottom: 30px;
+}
+
+
+/* Timeline */
+
+.timeline {
+    border-left: 2px solid #c9d9eb;
+    margin-left: 7px;
+    padding-left: 28px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 36px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background-color: #0066cc;
+    border: 3px solid #f8f9fa;
+    border-radius: 50%;
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #0066cc;
+    margin-bottom: 8px;
+}
+
+.timeline-item h4 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #212529;
+    margin-bottom: 6px;
+}
+
+.timeline-organization {
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 12px;
+}
+
+.timeline-description {
+    color: #495057;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+
+/* Responsive Timeline */
+
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .timeline-heading {
+        font-size: 1.35rem;
+    }
+}
+
+/* Education GPA */
+
+.timeline-gpa {
+    display: inline-block;
+    background-color: #e9f3ff;
+    color: #0056b3;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+
+/* Academic Honours and Scholarships */
+
+.academic-honours {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #dee2e6;
+}
+
+.academic-honours h5 {
+    font-size: 1rem;
+    color: #212529;
+    margin-bottom: 12px;
+}
+
+.academic-honours ul {
+    list-style: none;
+    padding: 0;
+}
+
+.academic-honours li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #495057;
+    line-height: 1.6;
+}
+
+.academic-honours li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+    font-weight: bold;
+}
