@@ -683,3 +683,63 @@ body {
     }
 
 }
+
+/* ========================================
+   Mobile Navigation
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 16px 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px 16px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
+}
+
+
+/* ========================================
+   Small Mobile Navigation
+   ======================================== */
+
+@media (max-width: 480px) {
+
+    .nav-container {
+        padding: 14px 10px;
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 10px 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+}
