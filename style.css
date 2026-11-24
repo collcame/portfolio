@@ -743,3 +743,92 @@ body {
     }
 
 }
+
+/* Hero Button Responsiveness */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+@media (max-width: 480px) {
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        text-align: center;
+    }
+
+}
+
+/* ========================================
+   Navigation and Scrolling Improvements
+   ======================================== */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ========================================
+   Keyboard Accessibility
+   ======================================== */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #0066cc;
+    outline-offset: 4px;
+}
+
+.footer a:focus-visible {
+    outline-color: #66b3ff;
+}
+
+
+/* ========================================
+   Mobile Navigation Behaviour
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: static;
+    }
+
+    html {
+        scroll-padding-top: 20px;
+    }
+
+}
+
+
+/* ========================================
+   Reduced Motion Accessibility
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+}
